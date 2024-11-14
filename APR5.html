@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css code for calculator -->
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .agu{
+        height: 650px;
+        width: 350px;
+        border: 5px solid black;
+        background-color: black;
+    }
+    .ike{
+        height: 300px;
+        width: 330px;
+        border: 2px solid black;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: 8px;
+        background-color: white;
+    }
+    .shape{
+            padding: 20px;
+            border-radius: 50%;
+            border: 1.5%;
+        }
+        .ben{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+    </style>
+    <!-- css code end -->
+    <!-- js for calculator -->
+    <script>
+        function one(){
+        document.querySelector("h1").innerHTML="1";
+        }
+        function two(){
+        document.querySelector("h1").innerHTML="2";
+        }
+        function three(){
+        document.querySelector("h1").innerHTML="3";
+        }
+        function minus(){
+        document.querySelector("h1").innerHTML="-n";
+        }
+    </script>
+    <!-- js end -->
+</head>
+<body>
+    <!-- html and css for calculator -->
+    <div class="agu">
+        
+        <div class="ike">
+            <h1>number</h1>
+        </div>
+        <div class="ben">
+            <button style="background-color: burlywood; color: white;" class="shape">AC</button>
+            <button  class="shape">()</button>
+            <button class="shape">%</button>
+            <button style="background-color: gray; color: white;" class="shape">/</button>
+        </div>
+        <div class="ben">
+            <button onclick="one()" style="background-color: burlywood; color: white;" class="shape">1</button>
+            <button onclick="two()" class="shape">2</button>
+            <button onclick="three()"class="shape">3</button>
+            <button onclick="minus()" style="background-color: gray; color: white;" class="shape">-</button>
+        </div>
+        <div class="ben">
+            <button style="background-color: burlywood; color: white;" class="shape">4</button>
+            <button  class="shape">5</button>
+            <button class="shape">6</button>
+            <button style="background-color: gray; color: white;" class="shape">+</button>
+        </div>
+        <div class="ben">
+            <button style="background-color: burlywood; color: white;" class="shape">7</button>
+            <button  class="shape">8</button>
+            <button class="shape">9</button>
+            <button style="background-color: gray; color: white;" class="shape">=</button>
+        </div>
+
+    </div>
+    <!-- html and css ends -->
+</body>
+</html>
